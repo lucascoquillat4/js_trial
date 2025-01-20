@@ -1,13 +1,8 @@
-function increment(){
-    document.getElementById("quantite").innerHTML = ((quantite*1) + 1);
-    }
-     
-    <span id="quantite">0</span>
-
 // personnage
 let personnage = {
     nom: "Lucas",
     argent: 100, //argent disponible
+    console.log("Lucas possède 100€,");
   };
   
 //boutique
@@ -15,6 +10,7 @@ let personnage = {
     produit: "Chocolatine",
     quantite: 10, //quantité initiale
     prix: 8, //prix unitaire
+    console.log("La boutique possède 10 chocolatine pour un prix unitaire de 8€");
   };
   
   //achats
