@@ -1,4 +1,4 @@
-// personnage
+//personnage
 let personnage = {
     nom: "Lucas",
     argent: 100, //argent
@@ -6,7 +6,6 @@ let personnage = {
   
 //boutique
   let boutique = {
-    produit: "Chocolatine",
     quantite: 10, //quantité initiale
     prix: 8, //prix unitaire
   };
