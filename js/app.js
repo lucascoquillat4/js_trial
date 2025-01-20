@@ -1,5 +1,14 @@
 //variables
-
 let first_name = "Lucas";
+var age = 18;
+2
 
-alert("Message qui s'affiche !");
+//cond
+if (age >= 18){
+    console.log("Bienvenue!")}
+    else{
+    console.log("Tu n'as pas l'âge requis.")
+    }
+
+console.log(12/6);
+
