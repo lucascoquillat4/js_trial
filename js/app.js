@@ -1,8 +1,7 @@
 // personnage
 let personnage = {
     nom: "Lucas",
-    argent: 100, //argent disponible
-    console.log("Lucas possède 100€,");
+    argent: 100, //argent
   };
   
 //boutique
@@ -10,14 +9,13 @@ let personnage = {
     produit: "Chocolatine",
     quantite: 10, //quantité initiale
     prix: 8, //prix unitaire
-    console.log("La boutique possède 10 chocolatine pour un prix unitaire de 8€");
   };
   
   //achats
   function acheterProduit(personnage, boutique) {
     let produitsAchetes = 0; 
   
-    //achats à effectuer
+    //achats suite
     while (personnage.argent >= boutique.prix && boutique.quantite > 0) {
       personnage.argent -= boutique.prix; 
       boutique.quantite--; //dim nbre de produits en boutique
@@ -25,10 +23,9 @@ let personnage = {
     }
   
     //affichage console
-    console.log(`${personnage.nom} a acheté ${produitsAchetes} ${boutique.produit}(s).`);
-    console.log(`Il reste ${personnage.argent}€ à ${personnage.nom}.`);
-    console.log(
-      `Le produit est ${boutique.quantite === 0 ? "en rupture de stock" : "encore disponible"}.`
+    console.log(`${personnage.nom} a acheté ${produitsAchetes} ${boutique.produit}(s).`); //console log nbre de produits achetés
+    console.log(`Il reste ${personnage.argent}€ à ${personnage.nom}.`); //console log argent restant
+    console.log(`Le produit est ${boutique.quantite === 0 ? "en rupture de stock" : "encore disponible"}.` //console log rupture
     );
   }
   
