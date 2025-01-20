@@ -1,7 +1,6 @@
 //variables
 let first_name = "Lucas";
 var age = 18;
-2
 
 //cond
 if (age >= 18){
