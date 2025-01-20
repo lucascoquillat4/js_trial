@@ -13,7 +13,7 @@ let personnage = {
   
   //achats
   function acheterProduit(personnage, boutique) {
-    let produitsAchetes = 0; 
+    let produitsAchetes = 10; 
   
     //achats à effectuer
     while (personnage.argent >= boutique.prix && boutique.quantite > 0) {
