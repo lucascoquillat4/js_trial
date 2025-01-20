@@ -1,3 +1,9 @@
+function increment(){
+    document.getElementById("quantite").innerHTML = ((quantite*1) + 1);
+    }
+     
+    <span id="quantite">0</span>
+
 // personnage
 let personnage = {
     nom: "Lucas",
