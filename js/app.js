@@ -1,18 +1,22 @@
-//personnage
-let personnage = {
-    nom: "Lucas",
-    argent: 100, //argent
+//guerrier1
+let guerrier1 = {
+    nom: "Alexander ", // Nom
+    vie: 100, // Points de vie
+    attack: 25, // Valeur d'attaque
+    precision: 0.8, // Valeur de precison
   };
   
-//boutique
-  let boutique = {
-    quantite: 10, //quantité initiale
-    prix: 8, //prix unitaire
+//guerrier2
+  let guerrier2 = {
+    nom: "Ragnar", // Nom
+    vie: 150, // Points de vie
+    attack: 15, // Valeur d'attaque
+    precision: 0.6 // Valeur de précision
   };
   
-  //achats
-  function acheterProduit(personnage, boutique) {
-    let produitsAchetes = 0; 
+  //attaque
+  function attaquer(guerrier1, guerrier2) {
+    let attaquer = 0; 
   
     //achats suite
     while (personnage.argent >= boutique.prix && boutique.quantite > 0) {

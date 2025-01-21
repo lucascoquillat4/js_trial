@@ -1,0 +1,10 @@
+.h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#lorem1 {
+    text-align: center;
+    /* color: black */
+}
