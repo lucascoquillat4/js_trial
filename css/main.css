@@ -1,10 +1,21 @@
-.h1 {
-    background-color: black;
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dark-mode {
+    background-color: #121212;
     color: white;
-    text-align: center;
-}
-
-#lorem1 {
-    text-align: center;
-    /* color: black */
-}
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
