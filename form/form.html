@@ -1,29 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validation de Formulaire</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .form-control {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .error {
+      color: red;
+      font-size: 12px;
+    }
+
+    .success {
+      color: green;
+      font-size: 12px;
+    }
+
+    .invalid {
+      border-color: red;
+    }
+
+    .valid {
+      border-color: green;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #6200ea;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3700b3;
+    }
+  </style>
 </head>
-<body>   
-    <h1 id="titre-principal">Cours Javascript</h1>
-    <div id="menu">
-        <div class="tab content1 active">Menu 1</div>
-        <div class="tab content2">Menu 2</div>
-        <div class="tab content3">Menu 3</div>
+<body>
+  <h1>Formulaire de validation</h1>
+  <form id="form">
+    <div class="form-control">
+      <label for="pseudo">Pseudo (6 caractères minimum)</label>
+      <input type="text" id="pseudo" placeholder="Entrez votre pseudo">
+      <small class="error"></small>
     </div>
-    <div id="content">
-        <div class="content content1 visible">
-            <p>Contenu 1</p>
-        </div>
-        <div class="content content2">
-            <p>Contenu 2</p>
-        </div>
-        <div class="content content3">
-            <p>Contenu 3</p>
-        </div>
+    <div class="form-control">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Entrez votre email">
+      <small class="error"></small>
     </div>
-    <script src="form/form.js"></script>
+    <div class="form-control">
+      <label for="password">Mot de passe (8 caractères minimum)</label>
+      <input type="password" id="password" placeholder="Entrez votre mot de passe">
+      <small class="error"></small>
+    </div>
+    <div class="form-control">
+      <label for="confirm-password">Vérification du mot de passe</label>
+      <input type="password" id="confirm-password" placeholder="Confirmez votre mot de passe">
+      <small class="error"></small>
+    </div>
+    <div class="form-control">
+      <p>Question : Quel est votre animal préféré ?</p>
+      <input type="radio" name="qcm" id="chien" value="Chien">
+      <label for="chien">Chien</label>
+      <br>
+      <input type="radio" name="qcm" id="chat" value="Chat">
+      <label for="chat">Chat</label>
+      <br>
+      <input type="radio" name="qcm" id="oiseau" value="Oiseau">
+      <label for="oiseau">Oiseau</label>
+      <small class="error"></small>
+    </div>
+    <button type="button" id="submit">Valider</button>
+  </form>
+  <div id="messages"></div>
+  
+  <script src="form/form.js"></script>
 </body>
 </html>
