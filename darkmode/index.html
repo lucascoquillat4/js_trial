@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">   
-    <title>jsRendu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Mode</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: black;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #6200ea;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <h1>Bienvenue à toi !</h1>
-    <div class="lorem1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Architecto possimus earum tempore provident quam sunt, illum quasi modi nostrum sed sapiente deserunt repudiandae.
-        Velit qui necessitatibus, molestias officia obcaecati commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Architecto possimus earum tempore provident quam sunt, illum quasi modi nostrum sed sapiente deserunt repudiandae.
-        Velit qui necessitatibus, molestias officia obcaecati commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Architecto possimus earum tempore provident quam sunt, illum quasi modi nostrum sed sapiente deserunt repudiandae.
-        Velit qui necessitatibus, molestias officia obcaecati commodi!</div>
+  <h1>Mode Sombre</h1>
+  <p>Cliquez sur le bouton pour activer ou désactiver le mode sombre.</p>
+  <button id="toggle-dark-mode">Activer le mode sombre</button>
 
-        <div class="lorem2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Architecto possimus earum tempore provident quam sunt, illum quasi modi nostrum sed sapiente deserunt repudiandae.
-            Velit qui necessitatibus, molestias officia obcaecati commodi!</div>
-    <script src="darkmode/darkmode.js"></script>
+  <script src="darkmode/darkmode.js"></script>
 </body>
 </html>
