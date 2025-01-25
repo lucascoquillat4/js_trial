@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs Interaction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+    }
+
+    li {
+      padding: 10px 20px;
+      background: #f0f0f0;
+      border: 1px solid #ddd;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    li.tab-active {
+      background: #6200ea;
+      color: white;
+      border-color: #6200ea;
+    }
+
+    .content div {
+      display: none;
+      padding: 20px;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      margin-top: 10px;
+    }
+
+    .content div.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li class="tab-home">Accueil</li>
+    <li class="tab-about">À propos</li>
+    <li class="tab-contact">Contact</li>
+  </ul>
+
+  <div class="content">
+    <div class="home">Bienvenue sur la page d'accueil !</div>
+    <div class="about">Voici des informations à propos de nous.</div>
+    <div class="contact">Contactez-nous ici.</div>
+  </div>
+
+  <script src="tab/tab.js"></script>
+</body>
+</html>
