@@ -4,3 +4,4 @@ button.addEventListener('click', () => {  document.body.classList.toggle('dark-m
     ? 'Désactiver le mode sombre'
     : 'Activer le mode sombre';
 });
+

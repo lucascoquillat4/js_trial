@@ -58,3 +58,5 @@ if (combattant1.pointsDeVie > 0) {
 } else {
   console.log(`${combattant2.nom} remporte le combat !`);
 }
+
+

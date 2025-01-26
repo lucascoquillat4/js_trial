@@ -59,3 +59,5 @@ class Combattant {
     console.log(`${combattant2.nom} remporte le combat !`);
   }
   
+
+  
